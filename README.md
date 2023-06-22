@@ -1,5 +1,5 @@
 
-# Miikka's Portfolio
+# Kochkompass
 PHP, HTML, CSS, JS
 ## Home
 ![App Screenshot](https://i.ibb.co/K2fCVH3/Home.png)
