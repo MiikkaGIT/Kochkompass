@@ -1,0 +1,477 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 70vh;
+}
+
+.headimg {
+    flex: 1 1 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headimg img {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.headText {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.headText h2 {
+    color: #342d2d;
+    font-size: 80px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.headText .subtitle {
+    color: #342d2d;
+    font-size: 25px;
+}
+
+/* Media Query für eine maximale Bildschirmbreite von 768px */
+@media (max-width: 768px) {
+    .headimg,
+    .headText {
+        flex-basis: 100%;
+    }
+}
+
+/*
+Navbar
+*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar .logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-right: 10px;
+}
+
+.
+.navbar ul li:last-child {
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar ul li a:hover {
+    color: #FB9C0B;
+}
+
+/* ...vorheriger CSS-Code... */
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.burger {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: transform 0.3s ease;
+}
+
+.nav {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    margin-right: 10px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    width: 200px;
+}
+
+.search-button {
+    padding: 5px 10px;
+    background-color: #FB9C0B;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin-right: 20em;
+    cursor: pointer;
+}
+
+.search-button i {
+    vertical-align: middle;
+}
+
+/*
+Der rest
+*/
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container2 {
+    display: flex;
+    align-items: center;
+    min-height: 50vh;
+    flex-direction: column;
+    margin-bottom: 200px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 50px;
+    justify-content: space-between; /* Elemente gleichmäßig verteilen */
+}
+
+.flex-item {
+    flex-basis: calc(20% - 20px); /* 5 Elemente pro Zeile (20% - 20px für Abstand) */
+    margin: 10px;
+    padding: 20px;
+    background-color: rgba(42, 39, 39, 0.07);
+    text-align: center;
+    font-size: 20px;
+    color: #382f24;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.10);
+}
+
+.flex-item h2 {
+    padding-bottom: 20px;
+}
+
+.flex-item p {
+    padding-top: 20px;
+}
+
+.flex-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+/* Media Query für eine maximale Bildschirmbreite von 1200px */
+@media (max-width: 1200px) {
+    .flex-item {
+        flex-basis: calc(25% - 20px); /* 4 Elemente pro Zeile */
+    }
+}
+
+/* Media Query für eine maximale Bildschirmbreite von 992px */
+@media (max-width: 992px) {
+    .flex-item {
+        flex-basis: calc(33.33% - 20px); /* 3 Elemente pro Zeile */
+    }
+}
+
+/* Media Query für eine maximale Bildschirmbreite von 768px */
+@media (max-width: 768px) {
+    .flex-item {
+        flex-basis: calc(50% - 20px); /* 2 Elemente pro Zeile */
+    }
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #FB9C0B;
+}
+
+.button1:hover {
+    background-color: #FB9C0B;
+    color: white;
+}
+
+
+/* Footer */
+
+
+
+.footer-distributed {
+    background-color: #382f24;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+    margin-top: auto; /* Den Footer an das Ende der Seite verschieben */
+}
+
+.footer-distributed .footer-left p {
+    color: #8f9296;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    transition: ease .25s;
+}
+
+.footer-distributed .footer-links a:before {
+    content: "·";
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+    content: none;
+}
+
+.footer-distributed .footer-right {
+    float: right;
+    margin-top: 6px;
+    max-width: 180px;
+}
+
+.footer-distributed .footer-right a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 3px;
+    transition: all .25s;
+}
+
+.footer-distributed .footer-right a:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+.footer-distributed p.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-right {
+        text-align: center;
+    }
+
+    .footer-distributed .footer-right {
+        float: none;
+        margin: 0 auto 20px;
+    }
+
+    .footer-distributed .footer-left p.footer-links {
+        line-height: 1.8;
+    }
+}
+
+
+
+/* Rezeptsuche */
+
+.rezeptsuche-suche {
+    display: flex;
+    justify-content: center;
+}
+.rezeptsuche-suchform {
+    margin-top: 8px;
+}
+.rezeptsuche-suche{
+    display: flex;
+    margin: 0 auto;
+    padding: 50px;
+    flex-direction: row;
+}
+
+.rezeptsuche-search-bar{
+    margin-left: 20px;
+    padding: 5px;
+    border-radius: 3px;
+    border: solid 1px #33383b;
+    width: 600px;
+}
+
+.rezeptsuche-search-button{
+    padding: 5px 10px;
+    background-color: #FB9C0B;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+.filter-options {
+    display: flex;
+    margin: 0 auto;
+}
+
+.filter {
+    margin: 10px;
+    padding: 8px;
+    text-align: center;
+    font-size: 13px;
+    border: solid #FB9C0B 1px ;
+    color: #382f24;
+    border-radius: 30px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.10);
+    cursor: pointer;
+    user-select: none;
+}
+
+.filter.clicked {
+    background-color: #FB9C0B; /* Beispielhafte Farbe für geklickten Zustand */
+    color: white;
+}
+
+.kontakt{
+    height: 64.1vh;
+}
+
+.kontakt-container{
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    min-height: 50vh;
+    flex-direction: column;
+}
+.kontakt-container h1 {
+margin-bottom: 30px;
+}
+
+.kontakt-input{
+    padding: 20px;
+    border: none;
+    border-radius: 3px;
+    width: 600px;
+    margin-bottom: 20px;
+}
+
+.kontakt-search-button {
+    padding: 5px 10px;
+    background-color: #FB9C0B;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.rezept-container {
+    display: flex;
+    align-items: flex-start;
+    height: 78.9vh;
+}
+
+.rezept-bild {
+    flex: 1;
+    height: 100%;
+
+}
+
+.rezept-bild img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rezept-details {
+    flex: 1;
+    margin-left: 20px;
+    margin-top: 100px;
+}
+
+.rezept-details p {
+    flex: 1;
+    margin-top: 20px;
+}
+.rezept-details table {
+    margin-top: 20px;
+}
